@@ -1,0 +1,70 @@
+{
+  "hash": "e9a19fef",
+  "configHash": "0d9b45da",
+  "lockfileHash": "ea8891ab",
+  "browserHash": "a98337d6",
+  "optimized": {
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "ea5c1c51",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "aefb05c3",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "4928be5c",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "451a1f45",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "a60708a1",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "ef3ac98b",
+      "needsInterop": false
+    },
+    "ngx-toastr": {
+      "src": "../../../../../node_modules/ngx-toastr/fesm2022/ngx-toastr.mjs",
+      "file": "ngx-toastr.js",
+      "fileHash": "5d9fa6f7",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-WRKOH4UQ": {
+      "file": "chunk-WRKOH4UQ.js"
+    },
+    "chunk-PAK6LP6T": {
+      "file": "chunk-PAK6LP6T.js"
+    },
+    "browser-4OHBF4YR": {
+      "file": "browser-4OHBF4YR.js"
+    },
+    "chunk-GEJMJMGQ": {
+      "file": "chunk-GEJMJMGQ.js"
+    },
+    "chunk-KESNZNIX": {
+      "file": "chunk-KESNZNIX.js"
+    },
+    "chunk-BCSCV6X3": {
+      "file": "chunk-BCSCV6X3.js"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<!-- Fazendo o binding (pegar informações do .ts e exibindo no .html)
+ Cria a varável no .ts e aqui no html coloca ela entr {{}} -->
+
+ <form>
+    <label>Curso</label>
+    <input type="text" name="nomeCurso" [(ngModel)]="novoCurso.nomeCurso">
+    <label>Valor</label>
+    <input type="text" name="valorCurso" [(ngModel)]="novoCurso.valorCurso">
+ </form>
+
+<div style="margin-bottom: 20px;">
+    <table border="1">
+        @for (curso of cursos; track $index) {
+        <tr>
+            <td>{{curso.nomeCurso}}</td>
+            <td>{{curso.valorCurso}}</td>
+            <td><button (click)="selecionarCurso(curso)" >Selecionar curso</button></td>
+            <!-- <td> <button (click)="selecionarCurso(curso)">Editar</button></td> -->
+        </tr>
+        }
+    </table>
+</div>
+
+
+<div style="margin-top: 20px;">
+    <h2>Cadastrar Curso</h2>
+    <form [formGroup]="form" (ngSubmit)="cadastro()">
+        <div class="form-group">
+          <label for="nomeCurso">Nome do Curso:</label>
+          <input type="text" id="nomeCurso" formControlName="nomeCurso" class="form-control" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="valorCurso">Valor do Curso:</label>
+          <input type="number" id="valorCurso" formControlName="valorCurso" class="form-control" required>
+        </div>
+    
+        <!-- Adicionei o atributo [disabled] ao botão para desabilitá-lo quando o formulário for inválido -->
+        <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Cadastrar</button>
+      </form>
+</div>
+
+
+<div style="margin-top: 20px;">
+    <h2>Remover Curso</h2>
+    <form #formRemover="ngForm" (ngSubmit)="onSubmit(formRemover)">
+        <label for="idCurso">ID do Curso:</label>
+        <input type="number" id="idCurso" name="idCurso" ngModel>
+    
+        <label for="nomeCurso">Nome do Curso:</label>
+        <input type="text" id="nomeCurso" name="nomeCurso" ngModel>
+    
+        <button type="submit">Remover</button>
+      </form>
+</div>
+
+
+<!-- <div style="margin-top: 20px;">
+    <h2>Editar Curso</h2>
+    <form *ngIf="idCursoEditar !== undefined" (ngSubmit)="atualizarCurso()" #formEdicao="ngForm">
+        <label for="nomeCursoEditar">Nome do Curso:</label>
+        <input type="text" id="nomeCursoEditar" name="nomeCursoEditar" [(ngModel)]="novoCurso.nomeCurso" required>
+      
+        <label for="valorCursoEditar">Valor do Curso:</label>
+        <input type="number" id="valorCursoEditar" name="valorCursoEditar" [(ngModel)]="novoCurso.valorCurso" required>
+      
+        <button type="submit">Atualizar Curso</button>
+        <button type="button" (click)="cancelarEdicao()">Cancelar</button>
+      </form>
+</div> -->
